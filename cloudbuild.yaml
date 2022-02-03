@@ -15,6 +15,5 @@ steps:
   entrypoint: /bin/sh
   args:
     - '-c'
-    - |
-      set -x && \
+    - >
       gcloud compute ssh vm-created-by-deployment-manager --zone=us-central1-f --command='/bin/sh /home/mmc/pull.sh'
