@@ -14,7 +14,7 @@ steps:
   id: Update staging server
   # waitFor: ['-']
   entrypoint: /bin/sh
-  args: ['-c','compute','ssh','vm-created-by-deployment-manager','--zone','us-centeral1-f','--command','/bin/sh /home/mmc/pull.sh']
+  args: ['compute','ssh','vm-created-by-deployment-manager','--zone','us-centeral1-f','--command','/bin/sh /home/mmc/pull.sh']
     # - '-c'
     # - >
     #   gcloud compute ssh vm-created-by-deployment-manager --zone=us-central1-f --command='/bin/sh /home/mmc/pull.sh'
