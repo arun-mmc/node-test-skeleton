@@ -3,5 +3,11 @@ steps:
   id: Update staging server
   entrypoint: /bin/sh
   args:
-  - '-c'
-  - gcloud compute ssh vm-created-by-deployment-manager --zone=us-central1-f  --command='/bin/sh cd /home/mmc/pull.sh'
+    - "-c"
+    - |
+        echo "enter 1 bash command per line"
+        ls -la
+        node --version
+  # args:
+  # - '-c'
+  # - gcloud compute ssh vm-created-by-deployment-manager --zone=us-central1-f  --command='/bin/sh cd /home/mmc/pull.sh'
